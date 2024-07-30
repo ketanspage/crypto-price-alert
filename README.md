@@ -45,16 +45,13 @@ This is a Django application that allows users to set price alerts for various c
     python manage.py createsuperuser
     ```
 
-6. Start the Django development server:
+6. Build and start the services with Docker Compose:
     ```bash
-    python manage.py runserver
-    ```
+    docker compose --build
+    docker compose up
 
-7. Start the Celery worker:
-    ```bash
-    celery -A your_project_name worker --loglevel=info
     ```
-
+    
 ## Usage
 
 ### API Endpoints
